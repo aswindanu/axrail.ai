@@ -1,6 +1,6 @@
 import json
 import sys
-from code.solution import Solution
+from src.solution import Solution
 
 def load_json(path="data.json") -> dict:
     with open(path) as f:
