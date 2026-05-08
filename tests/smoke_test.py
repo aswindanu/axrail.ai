@@ -23,3 +23,9 @@ def test_example_3_direct_flight_no_stops_needed():
     flights = [[0, 1, 50], [1, 2, 50], [0, 2, 200]]
     solution = Solution({"n": n, "flights": flights, "src": 0, "dst": 2, "k": 0})
     assert solution.find_cheapest_price() == 200
+
+def test_example_4_five_cities():
+    n = 5
+    flights = [[0, 1, 50], [1, 2, 50], [2, 3, 200], [3, 4, 50], [4, 5, 50], [5, 0, 300]]
+    solution = Solution({"n": n, "flights": flights, "src": 3, "dst": 2, "k": 6})
+    assert solution.find_cheapest_price() == 500
